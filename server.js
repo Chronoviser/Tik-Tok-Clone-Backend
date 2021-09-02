@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(Cors());
 
 // Database Config
-const connection_url = "mongodb+srv://admin:admin@cluster0.mjral.mongodb.net/tiktokclonedb?retryWrites=true&w=majority"
+const connection_url = "mongodb+srv://admin:<password>@cluster0.mjral.mongodb.net/tiktokclonedb?retryWrites=true&w=majority"
 mongoose.connect(connection_url, err => {
     if (err) throw err;
     else console.log('connected to MongoDB');
